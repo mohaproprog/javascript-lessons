@@ -20,7 +20,7 @@
 
 
 // events
-let button = document.querySelector("p");
+let button = document.querySelector("button");
 // button.addEventListener("click",()=>{
 //     console.log("clicked");
 // })
@@ -29,13 +29,58 @@ let button = document.querySelector("p");
 //     console.log("clicked");
 // })
 
-button.addEventListener("click",()=>{
-    alert("massage");
-})
-button.addEventListener("mouseover"()=>{
+// button.addEventListener("click",()=>{
+//     alert("massage");
+// })
+// button.addEventListener("mouseover",()=>{
+//     document.body.style.background = ("black");
 
-}0
 
+// });
+
+// button.addEventListener("mouseover",()=>{
+//     document.body.style.background =("red")
+// });
+// button.addEventListener("mouseleave",()=>{
+//     document.body.style.background =("yellow");
+// })
+
+
+// keyup
+// let typing = document.querySelector("#typing");
+// let clone = document.querySelector ("#clone");
+// typing.addEventListener("keydown",()=>{
+//     clone.innerHTML = typing.value;
+//     console.log(typing)
+// })
+
+// keycode
+
+// let typing = document.querySelector("#typing");
+// let clone = document.querySelector ("#clone");
+// typing.addEventListener("keyup",(event)=>{
+//     console.log(event.keyCode);
+    
+// });
+
+// let typing = document.querySelector("#typing");
+// let clone = document.querySelector ("#clone");
+// typing.addEventListener("keyup",(event)=>{
+//     console.log(event.key);
+    
+// });
+
+let typing = document.querySelector("#typing");
+let clone = document.querySelector ("#clone");
+typing.addEventListener("keyup",(event)=>{
+    if (event.key == "b"){
+        document.body.style.background = "black";
+    }
+    else if (event.keyCode == "57"){
+        document.body.style.background = "red"
+    };
+    
+});
 
 
 
